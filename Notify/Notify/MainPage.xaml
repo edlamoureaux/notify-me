@@ -15,11 +15,13 @@
         <Label Text="Permissions" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" AutomationId="permsList" />
-        
+
+        <Label  Text="{Binding SIMphoneContacts.FirstName}" Font="30" TextColor="Black" FontAttributes="Bold"/>
+        <Label  Text="{Binding SIMphoneContacts.LastName}" Font="30" TextColor="Black" FontAttributes="Bold"/>
+        <Label  Text="{Binding SIMphoneContacts.PhoneNumber}" Font="30" TextColor="Black" FontAttributes="Bold"/>
+
     </StackLayout>
-    
-    
-    
+
 
 </ContentPage>  
     

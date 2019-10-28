@@ -152,6 +152,17 @@ namespace Notify.Droid
                                 //something wrong with one contact, may be display name is completely empty, decide what to do
                             }
                         }
+
+                        //simulate phone contacts here
+                        var SIMphoneContacts = new List<PhoneContact>();
+                        
+                        for (int i = 0 ; i < 10; i++) {
+                            var SIMcontact = new PhoneContact();
+                            SIMcontact.FirstName = "fName" + i;
+                            SIMcontact.LastName = "lName" + i;
+                            SIMcontact.PhoneNumber = "Num" + i;
+                            SIMphoneContacts.Add(SIMcontact);
+                        }
                         phones.Close();
                     }
                     // if we get here, we can't access the contacts. Consider throwing an exception to display to the user
