@@ -4,10 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notify.Android", "Notify\Notify.Android\Notify.Android.csproj", "{BA24660B-588F-427B-9F0D-E166A869D6A4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AEA6492-1328-4193-B6B1-7D7957D81C4B} = {4AEA6492-1328-4193-B6B1-7D7957D81C4B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notify.iOS", "Notify\Notify.iOS\Notify.iOS.csproj", "{4AEA6492-1328-4193-B6B1-7D7957D81C4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notify", "Notify\Notify\Notify.csproj", "{25290162-04A6-4831-97D8-CF1610CBCF72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notify", "Notify\Notify\Notify.csproj", "{25290162-04A6-4831-97D8-CF1610CBCF72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
